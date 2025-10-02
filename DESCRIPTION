@@ -1,0 +1,66 @@
+Encoding: UTF-8
+Package: ctwas
+Type: Package
+Title: Adjusting for Genetic Confounders in Transcriptome-Wide Association
+  Studies Improves Discovery of Risk Genes of Complex Traits
+Date: 2024-12-02
+Version: 0.4.21
+Authors@R: c(person("Siming","Zhao",role="aut",email="siming.zhao06@gmail.com"),
+             person("Wesley","Crouse",role="aut"),
+             person("Sheng","Qian",role="aut",email="shengqian@uchicago.edu"),
+             person("Kaixuan","Luo",role=c("aut", "cre"),email="kevinlkx@gmail.com"),
+             person("Matthew","Stephens",role="aut"),
+             person("Xin","He",role="aut"))
+Description: Implements the "causal-TWAS" (cTWAS) method
+    for identifying causal genes in genome-wide association studies
+    (GWAS) described in S. Zhao et al (2024)
+    <DOI:10.1038/s41588-023-01648-9>. cTWAS generalizes methods for
+    "transcriptome-wide association studies" (TWAS) in that when
+    analyzing a gene it adjusts for not only other nearby genes but
+    also nearby genetic variants.
+URL: https://github.com/xinhe-lab/ctwas/, https://xinhe-lab.github.io/ctwas/
+BugReports: https://github.com/xinhe-lab/ctwas/issues
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Imports:
+    utils,
+    methods,
+    stats,
+    tools,
+    Matrix,
+    parallel,
+    logging,
+    mixsqp,
+    magrittr,
+    dplyr,
+    tidyr,
+    ggplot2,
+    ggrepel,
+    rlang,
+    cowplot,
+    crayon,
+    readr,
+    data.table,
+    R.utils,
+    RSQLite,
+    locuszoomr,
+    pgenlibr,
+    ensembldb,
+    AnnotationFilter
+Suggests: 
+    Rfast,
+    enrichR,
+    DT,
+    htmltools,
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0),
+    EnsDb.Hsapiens.v86,
+    EnsDb.Hsapiens.v75
+biocViews:
+    Genetics,
+    Software
+VignetteBuilder: knitr
+NeedsCompilation: no
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3

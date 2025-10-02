@@ -1,0 +1,38 @@
+destination: docs
+
+repo:
+    branch: multigroup
+
+navbar:
+  structure:
+    left:  [reference, tutorial, FAQ, news]
+    right: [source]
+  components:
+    tutorial:
+      text: Tutorial
+      menu:
+      - text: A minimal tutorial of running cTWAS without LD
+        href: articles/minimal_tutorial.html
+      - text: Preparing cTWAS input data
+        href: articles/preparing_input_data.html
+      - text: Running cTWAS analysis
+        href: articles/running_ctwas_analysis.html
+      - text: Summarizing and visualizing cTWAS results
+        href: articles/summarizing_results.html
+      - text: Sample report of cTWAS results
+        href: articles/sample_report.html
+      - text: Post-processing cTWAS results
+        href: articles/postprocessing.html
+      - text: cTWAS utility functions
+        href: articles/utility_functions.html
+    FAQ:
+      text: FAQ
+      href: articles/FAQ.html
+    news:
+      text: News
+      menu:
+      - text: Software updates
+        href: articles/software_updates.html
+    source:
+      text: Source
+      href: https://github.com/xinhe-lab/ctwas/tree/multigroup
